@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# Keep downloaded CSVs (the course requires submitting data), so data/ is NOT ignored.

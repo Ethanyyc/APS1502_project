@@ -1,0 +1,28 @@
+# APS1052 Course Project - conda environment
+# Create with:  conda env create -f environment.yml
+# Then:         conda activate flex_aps1052
+#
+# This is a slim environment sufficient to run FLEX_LogReturn_Trading.ipynb.
+# The course-provided py3.11_AI environment also works (it is a superset);
+# in that case you only need to add the two EXTRA pip packages: lightgbm, shap.
+
+name: flex_aps1052
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - notebook
+  - pip
+  - pip:
+      - yfinance>=0.2.61
+      - fracdiff>=1.0.0
+      - tensorflow>=2.16
+      - lightgbm>=4.0
+      - shap>=0.44

@@ -1,0 +1,16 @@
+# APS1052 Course Project - FLEX log-return forecasting & quantile trading
+# Python 3.11 (do NOT use PyTorch per course rules)
+# Install with:  pip install -r requirements.txt
+# (The course conda env "py3.11_AI" already provides most of these; the lines
+#  marked EXTRA are the only ones it does not ship by default.)
+
+numpy>=1.26,<2.1
+pandas>=2.1,<2.3
+scipy>=1.11
+matplotlib>=3.8
+scikit-learn>=1.4
+yfinance>=0.2.61            # Yahoo Finance prices (target, ETFs, ^VIX, ^MOVE, HYG, IEF)
+fracdiff-modern>=1.0.0     # De Prado fractional differencing (imports as `fracdiff`); OPTIONAL - notebook has a manual fallback
+tensorflow>=2.16           # Keras MLP backend (CPU is fine)
+lightgbm>=4.0              # EXTRA: not in the default course env
+shap>=0.44                 # EXTRA: not in the default course env
